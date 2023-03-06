@@ -1,0 +1,244 @@
+<!-- ***** Header Area Start ***** -->
+<header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a [routerLink]="['/home']" class="logo">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a [routerLink]="['/home']" class="active">Home</a></li>
+                        <li><a [routerLink]="['/category']">Trips</a></li>
+                        <li><a [routerLink]="['/modelcars']">My Cars</a></li>
+                        <li><a [routerLink]="['/pricedetails']">Price Details</a></li>
+                        <li><a [routerLink]="['/contactus']">Contact Us</a></li>
+                        <li>
+                            <div *ngIf="fullname_user!=null">
+                                <span type="button" class="btn btn-success">{{fullname_user}}</span>
+                                <button type="button" class="btn btn-danger" (click)="logout()">Logout</button>
+                            </div>
+                            <div *ngIf="fullname_user==null">
+                                <button type="button" class="btn btn-info" [routerLink]="['/login']">Login</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main-white-button"><a [routerLink]="['/booking']"><i class="fa fa-plus"></i> Booking Now</a></div>
+                        </li>
+
+
+                    </ul>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ***** Header Area End ***** -->
+<div class="main-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="top-text header-text">
+                    <h6>Welcome To SRC Express</h6>
+                    <h2>Find Nearby Places &amp; Things</h2>
+                </div>
+            </div>
+            <div class="col-lg-12">
+
+            </div>
+            <div class="col-lg-10 offset-lg-1">
+                <ul class="categories">
+                    <li><a [routerLink]="['/category']"><span class="icon"><img src="../assets/user/assets/images/icontrips.png" alt="Home"></span> Trips</a></li>
+                    <li><a [routerLink]="['/modelcars']"><span class="icon"><img src="../assets/user/assets/images/iconbus.png" alt="cars"></span> Cars</a></li>
+                    <li><a [routerLink]="['/pricedetails']"><span class="icon"><img src="../assets/user/assets/images/icondiscount.png" alt="Vehicle"></span> Discount</a></li>
+                    <li><a [routerLink]="['/booking']"><span class="icon"><img src="../assets/user/assets/images/iconbooking.png" alt="Travel"></span> Booking</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popular-categories">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2>Introductions</h2>
+                    <h6>Check Them Out</h6>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="naccs">
+                    <div class="grid">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="menu">
+                                    <div class="first-thumb active">
+                                        <div class="thumb">
+                                            <span class="icon"><img src="../../../assets/user/assets/images/icontrips.png" alt=""></span> Trips
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="thumb">
+                                            <span class="icon"><img src="../../../assets/user/assets/images/iconbus.png" alt=""></span> Cars
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="thumb">
+                                            <span class="icon"><img src="../../../assets/user/assets/images/icondiscount.png" alt=""></span> Discount
+                                        </div>
+                                    </div>
+                                    <div class="last-thumb">
+                                        <div class="thumb">
+                                            <span class="icon"><img src="../../../assets/user/assets/images/iconbooking.png" alt=""></span> Booking Now
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 align-self-center">
+                                <ul class="nacc">
+                                    <li class="active">
+                                        <div>
+                                            <div class="thumb">
+                                                <div class="row">
+                                                    <div class="col-lg-5 align-self-center">
+                                                        <div class="left-text">
+                                                            <h4>Always with you on long trips</h4>
+                                                            <p>Our services always ensure the most professional services that you can experience during your trips. It is our pleasure to serve you.</p>
+                                                            <div class="main-white-button"><a [routerLink]="['/category']"><i class="fa fa-eye"></i> Discover More</a></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-7 align-self-center">
+                                                        <div class="right-image">
+                                                            <img src="../../../assets/user/assets/images/tripsimage.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="thumb">
+                                                <div class="row">
+                                                    <div class="col-lg-5 align-self-center">
+                                                        <div class="left-text">
+                                                            <h4>The best cars</h4>
+                                                            <p>Here we have the most modern buses to serve you. Regardless of the service: express, luxury or volvo, we will serve you the best vehicle possible.</p>
+                                                            <div class="main-white-button"><a [routerLink]="['/modelcars']"><i class="fa fa-eye"></i> Explore More</a></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-7 align-self-center">
+                                                        <div class="right-image">
+                                                            <img src="../../../assets/user/assets/images/busimage.jpg" alt="Foods on the table">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="thumb">
+                                                <div class="row">
+                                                    <div class="col-lg-5 align-self-center">
+                                                        <div class="left-text">
+                                                            <h4>Many discounts for customers</h4>
+                                                            <p>Did you know? We always create discounts that benefit our customers.</p>
+                                                            <div class="main-white-button"><a [routerLink]="['/pricedetails']"><i class="fa fa-eye"></i> More</a></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-7 align-self-center">
+                                                        <div class="right-image">
+                                                            <img src="../../../assets/user/assets/images/saleimage.jpg" alt="cars in the city">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="thumb">
+                                                <div class="row">
+                                                    <div class="col-lg-5 align-self-center">
+                                                        <div class="left-text">
+                                                            <h4>Book our tickets for trips</h4>
+                                                            <p>If you want an exciting trip, experience unforgettable memories, what are you waiting for, book your tickets now!</p>
+                                                            <div class="main-white-button"><a [routerLink]="['/booking']"><i class="fa fa-eye"></i> Booking Now</a></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-7 align-self-center">
+                                                        <div class="right-image">
+                                                            <img src="../../../assets/user/assets/images/bookimage.jpg" alt="Traveling Beach">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="about">
+                    <div class="logo">
+                        <img src="../assets/user/assets/images/logo-page-dark.png" alt="Plot Listing">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="helpful-links">
+                    <h4>Helpful Links</h4>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                            <ul>
+                                <li><a [routerLink]="['/home']">Categories</a></li>
+                                <li><a [routerLink]="['/pricedetails']">About Price</a></li>
+                                <li><a [routerLink]="['/contactus']">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul>
+                                <li><a [routerLink]="['/modelcars']">Cars</a></li>
+                                <li><a [routerLink]="['/category']">Trips</a></li>
+                                <li><a [routerLink]="['/booking']">Booking Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="contact-us">
+                    <h4>Contact Us</h4>
+                    <p>81th Land Mark</p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a>777-777-7777</a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a>69-69-6969</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>

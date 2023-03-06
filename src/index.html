@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SRCExpress</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- ====================================begin link css adminLTE-->
+    <link rel="stylesheet" href="./assets/admin/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="./assets/admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./assets/admin/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <link rel="stylesheet" href="./assets/admin/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="./assets/admin/plugins/jqvmap/jqvmap.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="./assets/admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="./assets/admin/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="./assets/admin/plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="./assets/admin/plugins/summernote/summernote-bs4.css">
+
+    <!-- ===================================end lnk css adminLTE -->
+
+
+    <!-- ====================================begin link css themeplate-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/user/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="./assets/user/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="./assets/user/assets/css/templatemo-plot-listing.css">
+    <link rel="stylesheet" href="./assets/user/assets/css/animated.css">
+    <link rel="stylesheet" href="./assets/user/assets/css/owl.css">
+
+    <link rel="stylesheet" href="./assets/user/assets/css/style.css">
+    <!-- ===================================end lnk css adminLTE -->
+
+    <link href="./assets/admin/dist/css/password.min.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+</head>
+
+<body>
+    <app-root></app-root>
+
+
+    <!-- ====================================begin link js adminLTE-->
+    <script src="./assets/admin/plugins/jquery/jquery.min.js "></script>
+    <!-- Bootstrap 4 -->
+    <script src="./assets/admin/plugins/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <!-- AdminLTE App -->
+    <script src="./assets/admin/dist/js/adminlte.min.js "></script>
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="./assets/admin/plugins/jquery-ui/jquery-ui.min.js "></script>
+    <!-- ChartJS -->
+    <script src="./assets/admin/plugins/chart.js/Chart.min.js "></script>
+    <!-- Sparkline -->
+    <script src="./assets/admin/plugins/sparklines/sparkline.js "></script>
+    <!-- JQVMap -->
+    <script src="./assets/admin/plugins/jqvmap/jquery.vmap.min.js "></script>
+    <script src="./assets/admin/plugins/jqvmap/maps/jquery.vmap.usa.js "></script>
+    <!-- jQuery Knob Chart -->
+    <script src="./assets/admin/plugins/jquery-knob/jquery.knob.min.js "></script>
+    <!-- daterangepicker -->
+    <script src="./assets/admin/plugins/moment/moment.min.js "></script>
+    <script src="./assets/admin/plugins/daterangepicker/daterangepicker.js "></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="./assets/admin/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js "></script>
+    <!-- Summernote -->
+    <script src="./assets/admin/plugins/summernote/summernote-bs4.min.js "></script>
+    <!-- overlayScrollbars -->
+    <script src="./assets/admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js "></script>
+    <!-- AdminLTE App -->
+    <script src="./assets/admin/dist/js/adminlte.js "></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="./assets/admin/dist/js/pages/dashboard.js "></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="./assets/admin/dist/js/demo.js "></script>
+    <!-- ===================================end lnk js adminLTE -->
+
+    <!-- ====================================begin link js themeplate-->
+    <script src="./assets/user/vendor/jquery/jquery.min.js "></script>
+    <script src="./assets/user/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="./assets/user/assets/js/owl-carousel.js "></script>
+    <script src="./assets/user/assets/js/animation.js "></script>
+    <script src="./assets/user/assets/js/imagesloaded.js "></script>
+    <script src="./assets/user/assets/js/custom.js "></script>
+    <!-- ===================================end lnk js themeplate -->
+
+    <script src="./assets/admin/dist/js/password.min.js "></script>
+    <script>
+        $(document).ready(function() {
+            $('#buttonsave').attr('disabled', true);
+            $('#password').password({
+                enterPass: 'Type your password',
+                shortPass: 'The password is too short',
+                containsField: 'The password contains your username',
+                steps: {
+                    // Easily change the steps' expected score here
+                    13: 'Really insecure password',
+                    33: 'Weak; try combining letters & numbers',
+                    67: 'Medium; try using special characters',
+                    94: 'Strong password',
+                },
+                showPercent: true,
+                showText: true, // shows the text tips
+                animate: true, // whether or not to animate the progress bar on input blur/focus
+                animateSpeed: 'fast', // the above animation speed
+                field: false, // select the match field (selector or jQuery instance) for better password checks
+                fieldPartialMatch: true, // whether to check for partials in field
+                minimumLength: 4, // minimum password length (below this threshold, the score is 0)
+                useColorBarImage: true, // use the (old) colorbar image
+                customColorBarRGB: {
+                    red: [0, 240],
+                    green: [0, 240],
+                    blue: 10,
+                } // set custom rgb color ranges for colorbar.
+            }).on('password.score', (e, score) => {
+                if (score >= 67) {
+                    $('#buttonsave').removeAttr('disabled');
+                } else {
+                    $('#buttonsave').attr('disabled', true);
+                }
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
